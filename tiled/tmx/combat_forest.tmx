@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" tiledversion="1.1.5" orientation="orthogonal" renderorder="right-down" width="11" height="11" tilewidth="16" tileheight="16" infinite="0" nextobjectid="1">
+ <tileset firstgid="1" name="font1x" tilewidth="16" tileheight="16" tilecount="512" columns="32">
+  <image source="../bin/font1x.png" width="512" height="256"/>
+ </tileset>
+ <layer name="Tile Layer 1" width="11" height="11">
+  <data encoding="csv">
+433,433,385,394,385,385,386,385,394,433,433,
+433,394,385,385,385,385,385,385,385,394,385,
+394,385,385,385,385,385,385,385,390,385,385,
+385,385,385,385,385,385,385,385,385,385,432,
+385,390,385,433,385,385,385,385,385,385,385,
+394,385,385,385,385,385,385,385,385,385,391,
+385,385,385,385,385,385,385,385,433,385,385,
+433,385,385,385,387,385,385,385,385,385,394,
+394,385,385,385,385,385,385,385,385,385,433,
+433,385,391,385,385,385,385,385,385,394,385,
+433,433,433,385,394,385,385,394,433,433,433
+</data>
+ </layer>
+</map>
