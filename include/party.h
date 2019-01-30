@@ -7,6 +7,16 @@ enum {
 	STATUS_DEAD
 };
 
+enum {
+	STAT_STRENGTH,
+	STAT_ENDURANCE,
+	STAT_FINESSE,
+	STAT_INTELLECT,
+	STAT_RESOLVE,
+	STAT_AWARENESS,
+	STATS_END
+};
+
 typedef struct {
 	char name[9];
 	unsigned char graphic;

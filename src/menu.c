@@ -1,4 +1,5 @@
 #include <stdlib.h>
+#include <stdbool.h>
 
 #include "libtcod.h"
 
@@ -13,9 +14,12 @@ menu_t *menu_new(int size) {
 	return menu;
 }
 
-void menu_selector_move(menu_t *menu, int offset) {
-	if (menu->current + offset >= 0 && menu->current + offset < menu->size)
+bool menu_selector_move(menu_t *menu, int offset) {
+	if (menu->current + offset >= 0 && menu->current + offset < menu->size) {
 		menu->current += offset;
+		return true;
+	}
+	return false;
 }
 
 void menu_select(menu_t *menu) {

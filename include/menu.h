@@ -1,5 +1,7 @@
 #pragma once
 
+#include <stdbool.h>
+
 #include "libtcod.h"
 
 typedef struct {
@@ -14,7 +16,7 @@ typedef struct {
 
 menu_t *menu_new(int size);
 
-void menu_selector_move(menu_t *menu, int offset);
+bool menu_selector_move(menu_t *menu, int offset);
 void menu_select(menu_t *menu);
 
 void menu_draw(menu_t *menu, int x, int y, TCOD_bkgnd_flag_t alignment);

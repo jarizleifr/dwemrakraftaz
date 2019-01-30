@@ -1,39 +1,50 @@
 #pragma once
 
 enum {
-	STR_RACE_01,
-	STR_RACE_02,
-	STR_RACE_03,
-	STR_RACE_04,
-	STR_RACE_05,
-	STR_RACE_06,
-	STR_RACE_07,
 // ============================================================================
-	STR_RACE_01_DESC,
-	STR_RACE_02_DESC,
-	STR_RACE_03_DESC,
-	STR_RACE_04_DESC,
-	STR_RACE_05_DESC,
-	STR_RACE_06_DESC,
-	STR_RACE_07_DESC,
+	STR_ARCHETYPE_01,
+	STR_ARCHETYPE_02,
+	STR_ARCHETYPE_03,
+	STR_ARCHETYPE_04,
+	STR_ARCHETYPE_05,
+	STR_ARCHETYPE_06,
+	STR_ARCHETYPE_07,
+	STR_ARCHETYPE_08,
+	STR_ARCHETYPE_09,
+// ============================================================================
+	STR_ARCHETYPE_01_DESC,
+	STR_ARCHETYPE_02_DESC,
+	STR_ARCHETYPE_03_DESC,
+	STR_ARCHETYPE_04_DESC,
+	STR_ARCHETYPE_05_DESC,
+	STR_ARCHETYPE_06_DESC,
+	STR_ARCHETYPE_07_DESC,
+	STR_ARCHETYPE_08_DESC,
+	STR_ARCHETYPE_09_DESC,
 // ============================================================================
 	STRINGS_END
 };
 
 const char* const strings[STRINGS_END] = {
-	"Human",									// STR_RACE_01
-	"Half-Elf",									// STR_RACE_02
-	"Elf",										// STR_RACE_03
-	"Dwarf",									// STR_RACE_04
-	"Gnome",									// STR_RACE_05
-	"Halfling",									// STR_RACE_06
-	"Orlok",									// STR_RACE_07
 // ============================================================================
-	"Humans are ",								// STR_RACE_01_DESC
-	"Half-Elves",								// STR_RACE_02_DESC
-	"Elves",									// STR_RACE_03_DESC
-	"Dwarves",									// STR_RACE_04_DESC
-	"Gnomes",									// STR_RACE_05_DESC
-	"Halflings",								// STR_RACE_06_DESC
-	"Orloks",									// STR_RACE_07_DESC
+	"Fighter",									// STR_RACE_01
+	"Paladin",									// STR_RACE_02
+	"Priest",									// STR_RACE_03
+	"Thief",									// STR_RACE_04
+	"Assassin",									// STR_RACE_05
+	"Ranger",									// STR_RACE_06
+	"Wizard",									// STR_RACE_07
+	"Monk",										// STR_RACE_07
+	"Barbarian",								// STR_RACE_07
+// ============================================================================
+	"Fighter desc", // STR_RACE_01_DESC
+	"Paladin desc",								// STR_RACE_02_DESC
+	"Priest desc",									// STR_RACE_03_DESC
+	"Thief desc",									// STR_RACE_04_DESC
+	"Assassin desc",									// STR_RACE_05_DESC
+	"Ranger desc",								// STR_RACE_06_DESC
+	"Wizard desc",									// STR_RACE_07_DESC
+	"Monk desc",									// STR_RACE_07_DESC
+	"Barbarian desc"									// STR_RACE_07_DESC
+// ============================================================================
 };

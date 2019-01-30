@@ -15,8 +15,7 @@ void gamestate_initialize() {
 	party_add_character((character_t){ "Eberulf", 	SPR_A_MAGE, 	0,   0,	  6,  2,  STATUS_OK	} );
 	
 	gamestate.current_map = MAP_WORLD;
-	gamestate.current_map = MAP_WORLD;
-	gamestate.party_offset = 0;
+	gamestate.party_offset = 19035;
 	
 	map_load(gamestate.current_map);
 }
