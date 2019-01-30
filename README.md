@@ -7,5 +7,7 @@ Archaic DOS-style RPG in the spirit of old Ultima games, in glorious faux EGA (m
 Written in C, using libtcod roguelike library for rendering and input.
 
 Libraries used:
+
 [ini]("github.com/rxi/ini")
+
 [libtcod]("bitbucket.org/libtcod/libtcod")
