@@ -8,6 +8,6 @@ Written in C, using libtcod roguelike library for rendering and input.
 
 Libraries used:
 
-[ini]("github.com/rxi/ini")
+[ini](http://github.com/rxi/ini)
 
-[libtcod]("bitbucket.org/libtcod/libtcod")
+[libtcod](http://bitbucket.org/libtcod/libtcod)
