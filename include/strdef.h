@@ -37,11 +37,11 @@ const char* const strings[STRINGS_END] = {
 	"Monk",										// STR_RACE_07
 	"Barbarian",								// STR_RACE_07
 // ============================================================================
-	"Fighter desc", // STR_RACE_01_DESC
-	"Paladin desc",								// STR_RACE_02_DESC
-	"Priest desc",									// STR_RACE_03_DESC
-	"Thief desc",									// STR_RACE_04_DESC
-	"Assassin desc",									// STR_RACE_05_DESC
+	"Fighters live and die for combat. They can be anything from a noble swordfighter to a bloodthirsty mercenary.", // STR_RACE_01_DESC
+	"Paladins are knights devoted to a spiritual cause. They combine martial prowess with divine magic",	// STR_RACE_02_DESC
+	"Priests are divine casters, who conjure magic from their connection to their deity.",								// STR_RACE_03_DESC
+	"Thief desc",								// STR_RACE_04_DESC
+	"Assassin desc",							// STR_RACE_05_DESC
 	"Ranger desc",								// STR_RACE_06_DESC
 	"Wizard desc",									// STR_RACE_07_DESC
 	"Monk desc",									// STR_RACE_07_DESC

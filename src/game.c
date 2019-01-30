@@ -64,5 +64,5 @@ void game_draw() {
 	
 	// Draw map and player sprite depending on camera position
 	map_draw_map(camera_offset);
-	console_draw_sprite(1+(x-cam_x)*2, 1+(y-cam_y)*2, SPR_A_LORD);
+	console_draw_sprite(1+(x-cam_x)*2, 1+(y-cam_y)*2, party.characters[0].graphic);
 }

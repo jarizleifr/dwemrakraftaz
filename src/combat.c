@@ -141,7 +141,30 @@ static void combat_player_turn(int command) {
 
 // Enemy controlled entity takes turn
 static void combat_enemy_turn() {
-	current_turn++;
+	// Temporary solution, just make them take random actions for now
+	int pos = entities[current_turn].offset;
+	int AI_choice = TCOD_random_get_int(NULL, 0, 15);
+	switch(AI_choice) {
+		default:
+			current_turn++;
+		break;
+		case 1:
+			if (pos - map.width >= 0)
+				combat_move_entity(-map.width);
+		break;
+		case 2:
+			if (pos % map.width < map.width-1) {
+				combat_move_entity(1);
+			}
+		break;
+		case 3:
+			if (pos + map.width < map.width * map.height)
+				combat_move_entity(map.width);
+		break;
+		case 4:
+			if (pos % map.width > 0)
+				combat_move_entity(-1);
+	}
 }
 
 // Confused entity takes turn
@@ -187,7 +210,7 @@ static void combat_draw_entities() {
 		int x, y;
 		util_xy_from_offset(&x, &y, entities[c].offset, 11);
 
-		if (current_turn == c) {
+		if (current_turn == c && entities[c].controller == CONTROLLER_PLAYER) {
 			console_draw_sprite_flicker(1+x*2, 1+y*2, entities[c].graphic, col_white);
 		}
 		else {

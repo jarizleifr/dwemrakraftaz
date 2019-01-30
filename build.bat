@@ -2,6 +2,7 @@
 REM Batch file for automated binary creation
 echo Compiling source...
 echo.
+windres res\iconresource.rc -O coff -o obj\icon.res
 mingw32-make
 echo.
 echo Converting maps and adding them to data...

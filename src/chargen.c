@@ -39,6 +39,7 @@ static int icon;
 
 static void start() {
 	menu_free(archetypemenu);
+	party_add_character((character_t){ "Jaroslav", 	icon, 100, 100, 20, 15, STATUS_OK } );
 	gamestate_initialize();
 	engine_set_state(STATE_GAME);
 }
@@ -68,13 +69,14 @@ static void chargen_draw_stats(int x, int y) {
 	TCOD_console_printf_ex(NULL, x, y+3, TCOD_BKGND_DEFAULT, TCOD_LEFT, "INT:%i", statistics[3]);
 	TCOD_console_printf_ex(NULL, x, y+4, TCOD_BKGND_DEFAULT, TCOD_LEFT, "RES:%i", statistics[4]);
 	TCOD_console_printf_ex(NULL, x, y+5, TCOD_BKGND_DEFAULT, TCOD_LEFT, "AWA:%i", statistics[5]);
-	
-	TCOD_console_printf_ex(NULL, x+8, y,   TCOD_BKGND_DEFAULT, TCOD_LEFT, "Sword: %i", 25);
-	TCOD_console_printf_ex(NULL, x+8, y+1, TCOD_BKGND_DEFAULT, TCOD_LEFT, "Skill 02 : %i", 10);
-	TCOD_console_printf_ex(NULL, x+8, y+2, TCOD_BKGND_DEFAULT, TCOD_LEFT, "Skill 03 : %i", 8);
-	TCOD_console_printf_ex(NULL, x+8, y+3, TCOD_BKGND_DEFAULT, TCOD_LEFT, "Skill 04 : %i", 20);
-	TCOD_console_printf_ex(NULL, x+8, y+4, TCOD_BKGND_DEFAULT, TCOD_LEFT, "Skill 05 : %i", 33);
-	TCOD_console_printf_ex(NULL, x+8, y+5, TCOD_BKGND_DEFAULT, TCOD_LEFT, "Skill 06 : %i", 10);
+	/*
+	TCOD_console_printf_ex(NULL, x+8, y,   TCOD_BKGND_DEFAULT, TCOD_LEFT, "Sword      :%i", 25);
+	TCOD_console_printf_ex(NULL, x+8, y+1, TCOD_BKGND_DEFAULT, TCOD_LEFT, "Stealth    :%i", 10);
+	TCOD_console_printf_ex(NULL, x+8, y+2, TCOD_BKGND_DEFAULT, TCOD_LEFT, "Disguise   :%i", 8);
+	TCOD_console_printf_ex(NULL, x+8, y+3, TCOD_BKGND_DEFAULT, TCOD_LEFT, "Lockpicking:%i", 20);
+	TCOD_console_printf_ex(NULL, x+8, y+4, TCOD_BKGND_DEFAULT, TCOD_LEFT, "Leadership :%i", 33);
+	TCOD_console_printf_ex(NULL, x+8, y+5, TCOD_BKGND_DEFAULT, TCOD_LEFT, "Thaumaturgy:%i", 10);
+	*/
 }
 
 // ============================================================================
@@ -143,6 +145,6 @@ void chargen_draw() {
 	TCOD_console_printf_rect(NULL, 2, 16, CONSOLE_WIDTH-4, 11, strings[STR_ARCHETYPE_01_DESC + archetypemenu->current]);
 	
 	console_draw_sprite(12, 5, icon);
-	TCOD_console_printf(NULL, 15, 5, "Left/Right");
-	TCOD_console_printf(NULL, 15, 6, "to change icon");
+	
+	TCOD_console_printf(NULL, 1, CONSOLE_HEIGHT-2, "%c%c: Select  %c%c: Icon  Spacebar: Reroll", 24, 25, 27, 26);
 }
